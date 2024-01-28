@@ -16,6 +16,10 @@ on:
       - '.github/workflows/*'
   workflow_dispatch:
     inputs:
+      publishPackage:
+        description: 'Publish NuGet package (true/false)'
+        required: true
+        default: 'false'
       logLevel:
         description: 'Log level'
         required: true
@@ -55,9 +59,9 @@ jobs:
       run: dotnet test --configuration Release --no-build --verbosity normal
       
     - name: Pack
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && github.event.inputs.publishPackage == 'true')
       run: dotnet pack --configuration Release --output nupkgs
       
     - name: Publish NuGet Package
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && github.event.inputs.publishPackage == 'true')
       run: dotnet nuget push nupkgs/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
