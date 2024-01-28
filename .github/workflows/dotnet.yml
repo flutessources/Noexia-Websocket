@@ -27,5 +27,5 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish NuGet Package
-      run: dotnet nuget push **/*.nupkg --source <NUGET_SOURCE> --api-key ${{secrets.NUGET_API_KEY}}
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push
+      run: dotnet nuget push **/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_KEY}}
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
