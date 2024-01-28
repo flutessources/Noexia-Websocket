@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noexia.Transport.WebSocket.Core", "Noexia.Transport.WebSocket.Core\Noexia.Transport.WebSocket.Core.csproj", "{503645CA-13FD-4375-8E0B-EBE51764F84D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noexia.Transport.WebSocket.Core.Server", "Noexia.Transport.WebSocket.Core.Server\Noexia.Transport.WebSocket.Core.Server.csproj", "{1F80848D-3699-4D73-A9D7-F72C0A125D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noexia.Transport.WebSocket.Client", "Noexia.Transport.WebSocket.Client\Noexia.Transport.WebSocket.Client.csproj", "{073A3CC1-A50D-4116-851C-26CE7BF847ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noexia.Transport.WebSocket.Core.Test", "Noexia.Transport.WebSocket.Core.Test\Noexia.Transport.WebSocket.Core.Test.csproj", "{707CD56F-FB85-4DD1-82F3-9A99986833E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503645CA-13FD-4375-8E0B-EBE51764F84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503645CA-13FD-4375-8E0B-EBE51764F84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503645CA-13FD-4375-8E0B-EBE51764F84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503645CA-13FD-4375-8E0B-EBE51764F84D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F80848D-3699-4D73-A9D7-F72C0A125D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F80848D-3699-4D73-A9D7-F72C0A125D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F80848D-3699-4D73-A9D7-F72C0A125D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F80848D-3699-4D73-A9D7-F72C0A125D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073A3CC1-A50D-4116-851C-26CE7BF847ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073A3CC1-A50D-4116-851C-26CE7BF847ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073A3CC1-A50D-4116-851C-26CE7BF847ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073A3CC1-A50D-4116-851C-26CE7BF847ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{707CD56F-FB85-4DD1-82F3-9A99986833E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707CD56F-FB85-4DD1-82F3-9A99986833E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707CD56F-FB85-4DD1-82F3-9A99986833E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707CD56F-FB85-4DD1-82F3-9A99986833E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09E31065-B4F9-4A8E-A6E2-A7E198BA55D2}
+	EndGlobalSection
+EndGlobal
